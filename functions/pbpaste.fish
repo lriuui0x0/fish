@@ -1,3 +1,8 @@
 function pbpaste
-    xclip -selection clipboard -o $argv
+    switch (uname)
+        case Darwin
+	    command pbpaste $argv
+	case '*'
+	    xclip -selection clipboard -o $argv
+    end
 end
