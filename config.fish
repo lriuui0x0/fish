@@ -1,3 +1,5 @@
+set PATH /Library/TeX/texbin $PATH
+
 set -l fish_greeting ''
 
 set -x EDITOR nvim
