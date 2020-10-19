@@ -1,4 +1,4 @@
-set PATH $HOME/.cargo/bin /Library/TeX/texbin $PATH
+set PATH (cat $HOME/.config/PATH 2>/dev/null || true) $PATH
 
 set -l fish_greeting ''
 
