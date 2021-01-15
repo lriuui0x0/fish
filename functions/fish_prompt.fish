@@ -2,7 +2,7 @@ function fish_prompt
     set -l status_copy $status
 
     set_color $fish_color_user
-    echo -n $USER
+    echo -n $USER @(hostname)
 
     echo -n ' '
 
