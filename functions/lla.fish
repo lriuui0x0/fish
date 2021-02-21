@@ -1,3 +1,3 @@
-function dir
+function lla
     ls -Alh $argv
 end
