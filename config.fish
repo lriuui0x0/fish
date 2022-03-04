@@ -1,5 +1,10 @@
 set PATH (cat $HOME/.config/PATH 2>/dev/null || true) $PATH
 
+for env in (cat $HOME/.config/ENV 2>/dev/null || true)
+    set token (echo $env | tr = \n)
+    set -x $token[1] $token[2]
+end
+
 set -l fish_greeting ''
 
 set -x EDITOR nvim
@@ -21,3 +26,5 @@ end &> /dev/null
 
 # Created by `userpath` on 2020-12-02 23:22:03
 set PATH $PATH /home/lriuui0x0/.local/bin
+set PATH $PATH /Users/rui/Library/Python/2.7/bin
+
