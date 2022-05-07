@@ -23,8 +23,3 @@ begin
     end > /dev/null
 end &> /dev/null
 
-
-# Created by `userpath` on 2020-12-02 23:22:03
-set PATH $PATH /home/lriuui0x0/.local/bin
-set PATH $PATH /Users/rui/Library/Python/2.7/bin
-
